@@ -11,9 +11,6 @@ library("ggplot2")
 library("cowplot")
 epi$sample_date <- as.Date(epi$sample_date)
 epi$epi_week <- epiweek(epi$sample_date)
-for (x in epi$epi_week(epi$epi_week)+53) {
-  if (epi$sample_date==2021)
-}
 
 write.csv(epi, "chunkydate.csv")
 
